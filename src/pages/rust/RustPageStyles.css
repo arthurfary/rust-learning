@@ -1,0 +1,12 @@
+article {
+  text-align: start;
+  width: 50%;
+}
+
+a {
+  color: #b7410e;
+}
+
+a:hover {
+  color: #95300f;
+}
