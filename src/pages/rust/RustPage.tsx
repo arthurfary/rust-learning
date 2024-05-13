@@ -51,10 +51,12 @@ const RustPage = () => {
           <strong>Let us begin!</strong>
         </p>
 
-        <h1>Rust 🦀</h1>
-        <h2>
-          <i> Like the thing in old cars? </i>
-        </h2>
+        <section className="doubleTitle">
+          <h1>Rust 🦀</h1>
+          <h2>
+            <i> Like the thing in old cars? </i>
+          </h2>
+        </section>
         <p>
           Actually no! The name Rust comes from the{" "}
           <a

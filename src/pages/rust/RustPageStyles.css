@@ -1,6 +1,28 @@
+/* i want this article to be in the middle of the screen, similar effect as if it had width 50%
+but it also needs to have a width of 100% or equivalent when in mobile */
 article {
+  display: flex;
   text-align: start;
-  width: 50%;
+  margin: 0 auto;
+  max-width: 800px; /* This will make sure that your article doesn't exceed 600px on larger screens */
+  width: 100%;
+  margin: 1em;
+  flex-wrap: wrap;
+}
+
+h1,
+h2,
+h3 {
+  width: 100%;
+}
+
+.doubleTitle h1 {
+  margin-bottom: 0;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
 }
 
 a {
