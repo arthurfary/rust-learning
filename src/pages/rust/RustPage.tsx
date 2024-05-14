@@ -53,9 +53,9 @@ const RustPage = () => {
 
         <section className="doubleTitle">
           <h1>Rust 🦀</h1>
-          <h2>
+          <h4>
             <i> Like the thing in old cars? </i>
-          </h2>
+          </h4>
         </section>
         <p>
           Actually no! The name Rust comes from the{" "}

@@ -1,3 +1,9 @@
+html {
+  font-size: 100%;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -26,9 +32,29 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
 h1 {
-  font-size: 3.2em;
+  font-size: 3.815rem;
   line-height: 1.1;
+}
+
+h2 {
+  font-size: 3.052rem;
+}
+
+h3 {
+  font-size: 2.441rem;
+}
+
+h4 {
+  font-size: 1.953rem;
 }
 
 button {
