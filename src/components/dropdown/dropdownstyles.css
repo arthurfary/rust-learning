@@ -3,7 +3,7 @@
   align-items: center;
 }
 
-.dropdown-content-box {
+.dropdown-content {
   margin-top: 1em;
   background-color: #ddd;
   color: #555;
@@ -14,8 +14,9 @@
   transition: max-height 0.3s ease-in-out;
 }
 
-.dropdown-content-box.show {
-  max-height: 100%;
+.dropdown-content.show {
+  max-height: 1000px; /* needs to be px for sslide down to work */
+  overflow: scroll;
 }
 
 .dropdown-inner-content {

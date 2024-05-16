@@ -32,7 +32,7 @@ const Dropdown = ({
 
         {dropDownText}
       </a>
-      <div className={`dropdown-content-box  ${show ? "show" : ""}`}>
+      <div className={`dropdown-content  ${show ? "show" : ""}`}>
         <div className="dropdown-inner-content">{children}</div>
       </div>
     </div>
