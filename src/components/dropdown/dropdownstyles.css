@@ -1,0 +1,28 @@
+.dropdown-header {
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-content-box {
+  margin-top: 1em;
+  background-color: #ddd;
+  color: #555;
+  border-radius: 20px;
+  /* makes it slide*/
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.dropdown-content-box.show {
+  max-height: 100%;
+}
+
+.dropdown-inner-content {
+  padding: 1em;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
+}

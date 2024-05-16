@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import hljs from "highlight.js/lib/core";
 import rust from "highlight.js/lib/languages/rust";
 import shell from "highlight.js/lib/languages/shell";
+import Dropdown from "../../components/dropdown/Dropdown";
 
 const fileTree = `hello_world/
 ├── src/
@@ -148,32 +149,43 @@ const RustPage = () => {
             function called main, the body of this function (simmilarly to
             something like C++) is where Rust will first execute your code!
             Inside the body of this function there is a <i>macro</i>{" "}
-            <code>println!()</code> being executed. Now what is a macro?
+            <code>println!()</code> being executed.{" "}
           </p>
+          <Dropdown dropDownText="Now, what is a macro?">
+            <p>
+              According to the Rust docs:{" "}
+              <i>
+                <a
+                  href="https://doc.rust-lang.org/book/ch19-06-macros.html#:~:text=macros%20are%20a%20way%20of%20writing%20code%20that%20writes%20other%20code"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  "macros are a way of writing code that writes other code".{" "}
+                </a>
+              </i>
+              Essentialy, macros allow functions to have a variable number of
+              arguments,{" "}
+              <i>
+                since when compiling they expand to a case matched in the
+                macros' definition.
+              </i>
+              In the hello world example, <code>println!()</code> is a macro
+              because it can more arguments, like, if you were printing a
+              variable:
+            </p>
+            <pre>
+              <code className="language-rust">{rustVariablePrint}</code>
+            </pre>
+          </Dropdown>
+        </section>
+        <section>
+          <h3>let Variables = "next";</h3>
           <p>
-            According to the Rust docs:{" "}
-            <i>
-              <a
-                href="https://doc.rust-lang.org/book/ch19-06-macros.html#:~:text=macros%20are%20a%20way%20of%20writing%20code%20that%20writes%20other%20code"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                "macros are a way of writing code that writes other code".{" "}
-              </a>
-            </i>
-            Essentialy, macros allow functions to have a variable number of
-            arguments,{" "}
-            <i>
-              since when compiling they expand to a case matched in the macros'
-              definition.
-            </i>
-            In the hello world example, <code>println!()</code> is a macro
-            because it can more arguments, like, if you were printing a
-            variable:
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+            distinctio eos deleniti, quasi nulla molestiae voluptatibus
+            assumenda, nesciunt veniam cumque ad error enim fugiat accusantium
+            hic est aliquam fuga vero?
           </p>
-          <pre>
-            <code className="language-rust">{rustVariablePrint}</code>
-          </pre>
         </section>
       </article>
     </>
