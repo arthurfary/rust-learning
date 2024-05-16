@@ -170,7 +170,7 @@ const RustPage = () => {
                 macros' definition.
               </i>
               In the hello world example, <code>println!()</code> is a macro
-              because it can more arguments, like, if you were printing a
+              because it can have more arguments, like if you were printing a
               variable:
             </p>
             <pre>
