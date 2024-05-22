@@ -5,8 +5,7 @@ use std::fs;
 use std::io;
 
 fn read_file(file_path: &str) -> io::Result<String> {
-    println!()
-    fs::read_to_string(file_path)
+    fs::read_to_string(file_path); 
 }
 
 fn main() {
@@ -14,7 +13,10 @@ fn main() {
 
     server.utilize(router! {
         get "**" => |_req, _res| {
-            read_file("../../index.html").expect("Error reading file.");
+             match read_file("index.html") {
+                Ok(content) => content,
+                Err(_) => "Error reading file.".to_string(),
+            }
         }
     });
 

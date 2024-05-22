@@ -96,6 +96,7 @@ const RustPage = () => {
             preventing that the programmer writes memory unsafe code.
           </p>
         </section>
+
         <section>
           <h2>Getting started</h2>
           <p>
@@ -128,6 +129,7 @@ const RustPage = () => {
             a simple hello world program, let's understand it!
           </p>
         </section>
+
         <section>
           <h2>Hello World! 👋</h2>
           <p>A hello world program in Rust is structured like this:</p>
@@ -151,6 +153,7 @@ const RustPage = () => {
             Inside the body of this function there is a <i>macro</i>{" "}
             <code>println!()</code> being executed.{" "}
           </p>
+
           <Dropdown dropDownText="Now, what is a macro?">
             <p>
               According to the Rust docs:{" "}
@@ -178,6 +181,7 @@ const RustPage = () => {
             </pre>
           </Dropdown>
         </section>
+
         <section>
           <h3>let Variables = "next";</h3>
           <p>
