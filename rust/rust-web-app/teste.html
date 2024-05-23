@@ -1,1 +1,68 @@
-<a href="/">home</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements Test</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+      .container {
+        text-align: center;
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-bottom: 1rem;
+        color: #333;
+      }
+      a {
+        display: block;
+        margin: 0.5rem 0;
+        text-decoration: none;
+        color: #007bff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .highlight {
+        color: #ff5733;
+      }
+      .explanation {
+        margin-top: 1rem;
+        color: #666;
+        font-size: 0.9rem;
+      }
+      .home-link {
+        margin-top: 1.5rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+      code {
+        background-color: #eee;
+        padding: 5px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="/" class="home-link">home</a>
+      <h1>You are at <code>/teste.html</code></h1>
+      <a href="/teste">/teste</a>
+      <a href="/teste/" class="highlight">/teste/</a>
+      <a href="/teste/index.html" class="highlight">/teste/index.html</a>
+      <a href="/teste/teste2">/teste/teste2</a>
+      <p class="explanation">The two middle links go to the same place.</p>
+    </div>
+  </body>
+</html>

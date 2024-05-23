@@ -1,1 +1,1 @@
-/home/arthur/projetos/rust-learning/rust/rust-web-app/target/debug/rust-web-app: /home/arthur/projetos/rust-learning/rust/rust-web-app/src/main.rs
+C:\Users\Arthur\projetos\blorg\rust\rust-web-app\target\debug\rust-web-app.exe: C:\Users\Arthur\projetos\blorg\rust\rust-web-app\src\main.rs
